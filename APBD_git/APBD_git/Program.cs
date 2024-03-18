@@ -26,9 +26,9 @@ public void SaySomething()
 public static double CalcAverage(int[] numbers)
 {
     double sum = 0;
-    foreach (int  number in numbers)
+    foreach (int  elem in numbers)
     {
-        sum += number;
+        sum += elem;
     }
 
     return sum / numbers.Length;
