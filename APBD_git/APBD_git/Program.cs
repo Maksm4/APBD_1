@@ -1,5 +1,6 @@
 ﻿Console.WriteLine("Hello, World!");
-
+Person mark = new Person("mark",16,"31311313312");
+mark.SaySomething();
 public class Person
 {
     private string name;
