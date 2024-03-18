@@ -3,7 +3,7 @@ Person mark = new Person("mark",16,"31311313312");
 mark.SaySomething();
 int[] numbers = {1,6,1,5,16};
 Console.WriteLine(Person.CalcAverage(numbers));
-
+Console.WriteLine(Person.MaximumValue(numbers));
 
 public class Person
 {
@@ -32,5 +32,17 @@ public static double CalcAverage(int[] numbers)
     }
 
     return sum / numbers.Length;
+}
+
+public static int MaximumValue(int[] numbers)
+{
+    int max = int.MinValue;
+    foreach (int number in numbers)
+    {
+        if (number > max)
+            max = number;
+    }
+
+    return max;
 }
 }
