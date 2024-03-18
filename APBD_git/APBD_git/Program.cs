@@ -12,4 +12,9 @@ public Person(string name, int age, string pesel)
     this.age = age;
     this.pesel = pesel;
 }
+
+public void SaySomething()
+{
+    Console.WriteLine("my name is " + name);
+}
 }
